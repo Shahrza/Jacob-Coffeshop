@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+
+body {
+  overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+ul,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  height: 6vh;
+  background-color:#f0e7e7;
+  position: fixed;
+  z-index: 2;
+}
+ 
+ 
+.logo,
+.nav {
+  display: flex;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo h4 {
+  margin: 20px;
+  font-size: 30px;
+  color: #000000;
+}
+
+#png {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav {
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-link a {
+color: black;
+padding: 20px;
+}
+
+.nav-link a:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+.text {
+  position: relative;
+  color: white;
+  font-size: 80px;
+  top: 15rem;
+  left: 20rem;
+  z-index: 1;
+  font-family: "Courgette", cursive;
+  text-align: center;
+}
+ .first {
+  background: url("coffee.jpg" );
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+} 
+
+.para {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  margin: 0 1rem;
+}
+
+.para h4 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.btn {
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition: 0.4s;
+}
+
+.main {
+  display: flex;
+  margin: 40px;
+}
+
+.main2 {
+  background: url("paper1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  z-index: -2;
+}
+
+.para2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  margin-top: 80px;
+  padding: 100px;
+}
+
+.para2 h6 {
+  font-family: "Courgette", cursive;
+  margin-bottom: 50px;
+  font-size: 60px;
+}
+
+.btn1 {
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition: 0.4s;
+}
+
+.table-price {
+  display: flex;
+}
+
+.table-price h4 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  flex: 1;
+  height: 450px;
+  width: 200px;
+  /* border: 1px solid black; */
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  box-shadow: 0 8px 16px 0;
+  transition: 0.4s ease-in;
+}
+
+.card-image {
+  height: 200px;
+  width: auto;
+  margin: 20px 0 8px;
+}
+
+.btn-card {
+  padding: 15px 50px;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+.btn-card:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  transition: 0.4s;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-gap: 3rem;
+  background: #333;
+  padding: 2rem 0 0 2rem;
+}
+
+#email {
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+footer .footer ul li:first-child {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+footer .footer ul li {
+  padding: 5px;
+}
+
+#social {
+  display: flex;
+}
+
+#social li {
+  height: 40px;
+  width: 40px;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 20px 10px 0 0;
+}
+
+.copyright {
+  background: #333;
+  text-align: center;
+  font-size: 1rem;
+  padding: 25px;
+  color: #fff;
+}
+
+#btn {
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0);
+  border: 1px solid white;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition: 0.4s;
+}
